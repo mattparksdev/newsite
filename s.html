@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>My Demo Site</title>
+		<!--Load in juqery via CDN-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+		<!--Local jQuery fallback like I was trying to describe to you over lunch-->
+	<script>window.jQuery||document.write(<script src='jquery-2.1.4.js'></script>
+	
+	
+
+</head>
+
+<body>
+	
+	
+	<div class="testdiv">
+	</div>
+	<div class="cooldiv">
+	</div>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			alert($('div.testdiv').css('border', '2px solid red')
+		})
+	
+
+	</script>
+
+	<!--pay attention to what loads on the page. look above for the jquery dom manipulation-->
+	<div id="myContent">
+		My jQuery enabled page!
+	</div>
+</body>
+
+
+
+</html>
